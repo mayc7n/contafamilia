@@ -1,13 +1,30 @@
 # Dependências e artefatos Expo/React Native
 node_modules/
 .expo/
-.expo-shared/
 dist/
 web-build/
-coverage/
-*.log
+expo-env.d.ts
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
-# Configurações locais e credenciais
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+.env*.local
 .env
 .env.*
 !.env.example
@@ -16,8 +33,11 @@ coverage/
 # explicitamente quando fizerem parte do histórico do projeto.
 docs/
 
-# Sistema operacional e editores
-.DS_Store
+# TypeScript
+*.tsbuildinfo
+/ios
+/android
+
+# Editor e sistema operacional
 .idea/
 .vscode/
-
