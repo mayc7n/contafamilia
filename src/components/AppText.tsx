@@ -1,10 +1,10 @@
-import { Text, TextProps, TextStyle } from 'react-native';
+import { Text, TextProps, TextStyle, StyleProp } from 'react-native';
 import { colors } from '../theme/colors';
 
 type AppTextProps = TextProps & {
   variant?: 'body' | 'caption' | 'title' | 'heading' | 'amount';
   color?: string;
-  style?: TextStyle;
+  style?: StyleProp<TextStyle>;
 };
 
 export function AppText({ variant = 'body', color = colors.ink, style, ...props }: AppTextProps) {

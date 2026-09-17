@@ -41,3 +41,4 @@ docs/
 # Editor e sistema operacional
 .idea/
 .vscode/
+.claude/
