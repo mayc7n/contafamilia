@@ -6,7 +6,7 @@
 
 **Architecture:** O cliente será TypeScript estrito com navegação leve por estado, telas separadas por responsabilidade e um repositório local assíncrono. O domínio financeiro será puro e independente da UI; o armazenamento local manterá a família e uma fila de sincronização, enquanto autenticação remota e sincronização futura serão opcionais por configuração.
 
-**Tech Stack:** React Native, Expo, TypeScript, AsyncStorage, SecureStore, NetInfo, Jest/ts-jest, ESLint.
+**Tech Stack:** React Native, Expo, TypeScript, expo-sqlite, SecureStore, NetInfo, Jest/ts-jest, ESLint.
 
 **Spec:** `docs/superpowers/specs/2026-09-17-conta-familia-mvp-design.md`
 
@@ -122,7 +122,7 @@ Expected: FAIL because the local store does not exist.
 
 - [ ] **Step 3: Implement local persistence**
 
-Use AsyncStorage for the structured local snapshot and queue, SecureStore only for session tokens, and a seeded family for first launch. The store must never persist banking credentials.
+Use `expo-sqlite` for the structured local snapshot and queue, SecureStore only for session tokens, and a seeded family for first launch. The store must never persist banking credentials.
 
 - [ ] **Step 4: Implement connectivity-aware sync status**
 
