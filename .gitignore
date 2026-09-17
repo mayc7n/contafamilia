@@ -1,0 +1,23 @@
+# Dependências e artefatos Expo/React Native
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+coverage/
+*.log
+
+# Configurações locais e credenciais
+.env
+.env.*
+!.env.example
+
+# Documentação de trabalho local; documentos do processo são adicionados
+# explicitamente quando fizerem parte do histórico do projeto.
+docs/
+
+# Sistema operacional e editores
+.DS_Store
+.idea/
+.vscode/
+
